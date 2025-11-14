@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>What is Phishing? — Phishing Awareness</title>
+  <meta name="description" content="Clear, practical explanation of phishing: how it works, why it succeeds, common examples, and clear steps to avoid it." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index1.html">Phishing<span class="accent">Aware</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index1.html">Home</a>
+        <a href="index2.html" class="active">What is Phishing?</a>
+        <a href="index3.html">Types of Attacks</a>
+        <a href="index4.html">Prevention Tips</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="phish-hero" data-animate>
+      <div class="hero-content">
+        <h1>What is Phishing?</h1>
+        <p class="lead">Attacks that impersonate trusted sources to trick you into revealing credentials, payment info, or personal data. Below — a concise, practical view: how it works, why it works, examples, and what to do.</p>
+      </div>
+
+      <div class="hero-media">
+        <img src="images/phishing2.png" alt="Phishing illustration" />
+      </div>
+    </section>
+
+    <!-- TWO-COLUMN: HOW IT WORKS (left) + WHY IT WORKS (right) -->
+    <section class="container two-col" data-animate>
+      <!-- Left column -->
+      <div class="col card">
+        <h2>How phishing works — quick flow</h2>
+        <ol class="compact-list">
+          <li><strong>Target selection</strong> — attacker chooses mass audience or specific person.</li>
+          <li><strong>Lure crafting</strong> — message mimics a trusted sender (bank, colleague, app).</li>
+          <li><strong>Delivery</strong> — email, SMS, social DM, or phone call.</li>
+          <li><strong>Action</strong> — click link, open attachment, or enter credentials.</li>
+          <li><strong>Exploitation</strong> — credential theft, malware, account takeover.</li>
+        </ol>
+        <p class="muted">Tip: Treat unexpected requests for credentials or money as suspicious — verify separately.</p>
+      </div>
+
+      <!-- Right column -->
+      <div class="col card">
+        <h2>Why phishing succeeds — quick psychology</h2>
+        <ul class="bullet-list compact">
+          <li><strong>Authority</strong> — messages seem to come from someone in charge.</li>
+          <li><strong>Urgency</strong> — fear of losing access or money forces fast clicks.</li>
+          <li><strong>Familiarity</strong> — logos, templates, and personal info lower guard.</li>
+          <li><strong>Convenience</strong> — people take the path of least resistance (click).</li>
+        </ul>
+        <p class="muted">Counter: pause, breathe, and verify before acting — that 5-second check prevents most attacks.</p>
+      </div>
+    </section>
+
+    <!-- EXAMPLES (3 cards side-by-side) -->
+    <section class="container examples-grid" data-animate>
+      <h2>Common real-world examples</h2>
+      <div class="grid-3">
+        <article class="card small">
+          <h3>Bank alert (Email)</h3>
+          <p>Message claims account issue and includes a link to “verify.” Real banks don’t ask passwords via email.</p>
+          <p class="muted">Check: hover links, inspect domain, call bank number from official site.</p>
+        </article>
+
+        <article class="card small">
+          <h3>Delivery / OTP (SMS)</h3>
+          <p>Text asks to confirm details or provide OTP. Scammers reuse OTPs to hijack accounts.</p>
+          <p class="muted">Check: open courier’s official app or site instead of clicking SMS links.</p>
+        </article>
+
+        <article class="card small">
+          <h3>Spear / Executive Fraud</h3>
+          <p>Targeted email that looks internal (CEO, vendor) asking for urgent payment or data.</p>
+          <p class="muted">Check: verify with a quick call to a known number (not reply email).</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHECKLIST + QUICK TIPS side-by-side -->
+    <section class="container two-col compact" data-animate>
+      <div class="col card">
+        <h2>Practical checklist (do this now)</h2>
+        <ul class="bullet-list">
+          <li>Pause before clicking any unexpected link.</li>
+          <li>Hover links on desktop; long-press on mobile to preview URL.</li>
+          <li>Verify sender using official contact methods.</li>
+          <li>Enable 2FA and use a password manager.</li>
+        </ul>
+      </div>
+
+      <div class="col card">
+        <h2>Quick 5-second checks</h2>
+        <ul class="bullet-list compact">
+          <li>Is the sender domain exact or slightly off?</li>
+          <li>Does the message pressure you to act now?</li>
+          <li>Are there unexpected attachments or requests for secrets?</li>
+          <li>Does the tone or spelling feel unprofessional?</li>
+        </ul>
+        <p class="muted">If multiple checks fail → report as phishing and delete.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="container" data-animate>
+      <div class="card center">
+        <h2>Next step</h2>
+        <p>Want concrete detection cues for each attack type? Move to Types of Attacks for examples and red flags.</p>
+        <p><a class="btn primary" href="index3.html">View Types of Attacks</a> <a class="btn ghost" href="index4.html">Prevention Tips</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-what"></span> Phishing Awareness</p>
+    </div>
+  </footer>
+</body>
+</html>

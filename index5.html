@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Survey Results — Phishing Awareness</title>
+  <meta name="description" content="Survey insights on phishing awareness and user responses." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js" defer></script>
+
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 24px;
+      padding: 20px 0;
+    }
+    .chart-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index1.html">Phishing<span class="accent">Aware</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index1.html">Home</a>
+      <a href="index2.html">What is Phishing?</a>
+      <a href="index3.html">Types of Attacks</a>
+      <a href="index4.html">Prevention Tips</a>
+      <a href="index5.html" class="active">Survey Results</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- SURVEY RESULTS -->
+  <section class="container" data-animate style="margin-top: 50px;">
+    <h2 style="text-align:center;">Survey Results</h2>
+    <div class="grid-container">
+      <div class="chart-box">
+        <h3>Age Group Distribution</h3>
+        <canvas id="ageChart"></canvas>
+      </div>
+
+      <div class="chart-box">
+        <h3>Heard About Phishing / Scams?</h3>
+        <canvas id="phishingChart"></canvas>
+      </div>
+
+      <div class="chart-box">
+        <h3>Received Suspicious Messages?</h3>
+        <canvas id="suspiciousChart"></canvas>
+      </div>
+
+      <div class="chart-box">
+        <h3>Actions Taken</h3>
+        <canvas id="actionChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="container center" data-animate style="margin-top: 30px;">
+    <div class="card">
+      <h2>Stay Alert, Stay Secure</h2>
+      <p>Continue learning and help others stay protected.</p>
+      <p><a href="index4.html" class="btn primary">Back to Prevention Tips</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year-prevent"></span> Phishing Awareness</p>
+  </div>
+</footer>
+
+<!-- ChartJS Code -->
+<script>
+  new Chart(document.getElementById('ageChart'), {
+    type: 'pie',
+    data: { labels: ['Under 18', '18-25', '26-40'], datasets: [{ data: [5, 81, 2] }] }
+  });
+  new Chart(document.getElementById('phishingChart'), {
+    type: 'pie',
+    data: { labels: ['Yes', 'No', 'Maybe'], datasets: [{ data: [46, 25, 6] }] }
+  });
+  new Chart(document.getElementById('suspiciousChart'), {
+    type: 'pie',
+    data: { labels: ['Yes', 'No'], datasets: [{ data: [60, 15] }] }
+  });
+  new Chart(document.getElementById('actionChart'), {
+    type: 'pie',
+    data: { labels: ['Ignored', 'Reported', 'Warned Others', 'Opened'],
+            datasets: [{ data: [38, 30, 10, 7] }] }
+  });
+</script>
+</body>
+</html>

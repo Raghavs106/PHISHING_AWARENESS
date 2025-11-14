@@ -1,0 +1,11 @@
+{
+  "short_name": "PhishAware",
+  "name": "Phishing Awareness",
+  "icons": [
+    { "src": "assets/favicon.png", "sizes": "192x192", "type": "image/png" }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#003c8f"
+}

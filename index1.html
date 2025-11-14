@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Phishing Awareness — Home</title>
+  <meta name="description" content="Phishing Awareness — Learn how to detect and prevent phishing attacks with simple, actionable guidance for everyone." />
+  <meta name="author" content="Raghavendra Sainy" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index1.html" aria-label="Phishing Awareness Home">Phishing<span class="accent">Aware</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index1.html">Home</a>
+        <a href="index2.html">What is Phishing?</a>
+        <a href="index3.html">Types of Attacks</a>
+        <a href="index4.html">Prevention Tips</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="home-hero">
+      <div class="hero-content" data-animate>
+        <h1>Phishing Awareness</h1>
+        <p>Phishing is the most common way attackers steal credentials and money. Learn how to spot phishing messages, protect personal information, and act fast if you suspect a scam.</p>
+        <p class="lead">Short, practical advice — not tech jargon. Designed for everyone.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="index2.html">How it works</a>
+          <a class="btn ghost" href="index4.html">Prevention tips & videos</a>
+        </div>
+      </div>
+
+      <div class="hero-media" data-animate>
+        <img src="images/phishing1.png" alt="Illustration: person recognizing phishing email" width="560" height="360" />
+      </div>
+    </section>
+
+    <section class="quick-tips container" data-animate>
+      <h2>Quick 5-second check</h2>
+      <ul class="tips-grid">
+        <li><strong>Look at sender:</strong> Is the domain suspicious?</li>
+        <li><strong>Check links:</strong> Hover (desktop) or inspect link before tapping.</li>
+        <li><strong>Urgency:</strong> Scammers push panic—slow down.</li>
+        <li><strong>Attachments:</strong> Unexpected files are risky.</li>
+      </ul>
+    </section>
+
+    <section class="why container" data-animate>
+      <h2>Why this matters</h2>
+      <p>Phishing attacks target individuals and companies. A single click can expose passwords, bank details, and private data. Small habits prevent most scams.</p>
+    </section>
+
+    <section class="contact-card container" data-animate>
+      <div>
+        <h2>Contact & Resources</h2>
+        <p>Email: <a href="mailto:sainiraghavendra2@gmail.com">sainiraghavendra2@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/raghavendra-sainy-294977368" target="_blank" rel="noopener">Raghavendra Sainy</a></p>
+      </div>
+      <div>
+        <h3>Free resources<h3>
+        <ul>
+          <li><a href="index2.html">Beginner guide</a></li>
+          <li><a href="index3.html">Attack types explained</a></li>
+          <li><a href="index4.html">Short training videos</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="feedback container" data-animate>
+      <h2>Feedback</h2>
+      <p>If you found these resources helpful, please share feedback.</p>
+      <form id="feedbackForm">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" aria-label="Your name" required />
+          <input type="email" name="email" placeholder="Your email" aria-label="Your email" required />
+        </div>
+        <textarea name="message" placeholder="Your feedback" aria-label="Your feedback" required></textarea>
+        <!-- lightweight client-side "submit" to Formspree or show a thank you -->
+        <button type="submit" class="btn primary">Send feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Phishing Awareness. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
